@@ -7,27 +7,27 @@ using namespace std;
 
 int main()
 {
-	//Original data Вихідні данні
-	int number = 5; // Змінна чисел яка зберігає цілі числа
-	bool isAlive = false; // логічна змінна зберігає логічні виразити ТРУ ФОЛС
-	string names[6] = { "Artem", "Motrya", "Melana", "Anna", "Tom", "Harry" }; // строковий масив в якому записано 6 елементів обявляємо    і заповнюємо одразу в одій стрічці
+	//Original data
+	int number = 5;
+	bool isAlive = false;
+	string names[6] = { "Artem", "Motrya", "Melana", "Anna", "Tom", "Harry" };
 
-	//Pointer with adres references   // 
-	int* p_number = &number;  //  Значення вказівника p_number буде = адрессі змінної int number = 5
-	bool* p_isAlive = &isAlive; //  Значення вказівника * p_isAlive буде = адресі місцю де знаходиться значення цих змінних 
-	string* p_names = new string[3]; // 
-	p_names = &names[2]; // Вказівник на адресу другого елементу масиву   "Melana"
+	//Pointer with adres references
+	int* p_number = &number;
+	bool* p_isAlive = &isAlive;
+	string* p_names = new string[3];
+	p_names = &names[2];
 
-	//Change original variables by using pointers Змінна вихідних змінних за допомогою покажчиків
-	*p_number = 555; // Міняємо значення  за адресами які вказані нащими індексами тобто  * Значення за адресом який ми предали у  p_number буде змінюватись на 555
-	*p_isAlive = true; // Значення адресу який ми передали  p_isAlive і змінили з ФОЛС на ТРУ 
-	p_names[0] = "Error"; //
-	p_names[1] = "Error"; //
+	//Change original variables by using pointers
+	*p_number = 555;
+	*p_isAlive = true;
+	p_names[0] = "Error";
+	p_names[1] = "Error";
 
-	//Output Вихід
-	cout << number << "\n"; //
-	cout << isAlive << "\n"; //
-	cout << names[2] << "   " << names[3]; //
+	//Output
+	cout << number << "\n";
+	cout << isAlive << "\n";
+	cout << names[2] << "   " << names[3];
 }
 
 
