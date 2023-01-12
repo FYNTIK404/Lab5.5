@@ -7,16 +7,16 @@ using namespace std;
 
 int main()
 {
-	//Original data
-	int number = 5;
-	bool isAlive = false;
-	string names[6] = { "Artem", "Motrya", "Melana", "Anna", "Tom", "Harry" };
+	//Original data 
+	int number = 5; // змінна числа
+	bool isAlive = false; // логычна змынна змынна булів 
+	string names[6] = { "Artem", "Motrya", "Melana", "Anna", "Tom", "Harry" }; // строковий масив в якому записано 6 елементів обявляємо і заповнюємо одразу в одій стрічці
 
-	//Pointer with adres references
-	int* p_number = &number;
-	bool* p_isAlive = &isAlive;
-	string* p_names = new string[3];
-	p_names = &names[2];
+	//Pointer with adres references   // вказывники ыз посиланнями на адреса змынних якы ми обямили осьо раныше
+	int* p_number = &number;  //  int* вказівник типу інт p_number назва вказівника    & посилаеться на адресу  int* p_number
+	bool* p_isAlive = &isAlive; // bool* вказівник типу бул  bool* p_isAlive спосіб обявлення вказівника = & беремо адресу іс зе алайф
+	string* p_names = new string[3]; // обявляємо динамічний масив
+	p_names = &names[2]; //
 
 	//Change original variables by using pointers
 	*p_number = 555;
